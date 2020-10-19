@@ -1,0 +1,17 @@
+{
+  "name": "mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "@vant/weapp": "^1.5.2",
+    "wux-weapp": "^3.8.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<van-card
+ num="2"
+ price="2.00"
+ desc="描述信息"
+ title="早点"
+ thumb="{{https://img.yzcdn.cn/vant/cat.jpeg}}"
+/>
+

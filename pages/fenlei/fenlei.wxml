@@ -1,0 +1,8 @@
+<!--pages/fenlei/fenlei.wxml-->
+<van-grid icon-size="40px" clickable="true">
+	<van-grid-item icon="https://img.yzcdn.cn/vant/cat.jpeg" text="文字" />
+	<van-grid-item icon="../../../../images/shaokao.jpg" text="文字" />
+	<van-grid-item icon="photo-o" text="文字" />
+	<van-grid-item icon="photo-o" text="文字" />
+</van-grid>
+

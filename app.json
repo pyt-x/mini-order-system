@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shopping-cart/shopping-cart",
+    "pages/fenlei/fenlei",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#BA55D3",
+    "navigationBarBackgroundColor": "#BA55D3",
+    "navigationBarTitleText": "彭勇陶3119007234",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "green",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/shopping-cart/shopping-cart",
+        "text": "订单",
+        "iconPath": "icon/data.png",
+        "selectedIconPath": "icon/data.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类",
+        "iconPath": "icon/fenlei.png",
+        "selectedIconPath": "icon/fenlei.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/message.png",
+        "selectedIconPath": "icon/message.png"
+      }
+  ]},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-grid":"@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-image":"@vant/weapp/image/index",
+    "van-card": "@vant/weapp/card/index"
+  }
+}
