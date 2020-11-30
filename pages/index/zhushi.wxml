@@ -1,0 +1,39 @@
+<!--pages/index/zhushi.wxml-->
+<van-card
+ desc="描述信息"
+ title="螺蛳粉"
+ price="11.00"
+ thumb="{{luosifenURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-card
+ desc="描述信息"
+ title="煲仔饭"
+ price="10.00"
+ thumb="{{baozaifanURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+

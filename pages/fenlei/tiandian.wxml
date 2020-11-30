@@ -1,0 +1,39 @@
+<!--pages/fenlei/tiandian.wxml-->
+<van-card
+ desc="描述信息"
+ title="芝士蛋糕"
+ price="7.00"
+ thumb="{{zhishiURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+<van-card
+ desc="描述信息"
+ title="樱花蛋糕"
+ price="12.00"
+ thumb="{{yinghuaURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>

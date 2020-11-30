@@ -1,0 +1,37 @@
+<!--pages/fenlei/shaokao.wxml-->
+<van-card
+ desc="描述信息"
+ title="烤大虾"
+ price="16.00"
+ thumb="{{kaodaxiaURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+<van-card
+ desc="描述信息"
+ title="生蚝"
+ price="25.50"
+ thumb="{{shenghaoURL}}"
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+

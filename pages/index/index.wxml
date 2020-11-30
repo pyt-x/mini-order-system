@@ -1,9 +1,23 @@
 <!--index.wxml-->
 <van-card
- num="2"
- price="2.00"
  desc="描述信息"
  title="早点"
- thumb="{{https://img.yzcdn.cn/vant/cat.jpeg}}"
+ thumb="{{zaodianURL}}"
+ lazy-load
+ thumb-link="zaodian"
+/>
+<van-card
+ desc="描述信息"
+ title="主食"
+ thumb="{{zhushiURL}}"
+ lazy-load
+ thumb-link="zhushi"
+/>
+<van-card
+ desc="描述信息"
+ title="夜宵"
+ thumb="{{yexiaoURL}}"
+ lazy-load
+ thumb-link="yexiao"
 />
 

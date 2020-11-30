@@ -1,3 +1,10 @@
 <!--pages/mine/mine.wxml-->
-<van-button type="primary">按钮</van-button>
 
+<van-card
+ num="1"
+ tag="未结算"
+ price="10.00"
+ desc="描述信息"
+ title="商品标题"
+ thumb="{{ imageURL }}"
+></van-card>

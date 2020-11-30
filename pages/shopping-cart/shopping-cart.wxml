@@ -1,2 +1,9 @@
 <!--pages/shopping-cart/shopping-cart.wxml-->
 
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+

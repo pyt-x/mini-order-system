@@ -1,0 +1,40 @@
+<van-card
+ desc="描述信息"
+ title="百香果奶茶"
+ price="10.00"
+ thumb="{{baixinagguonaichaURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-card
+ desc="描述信息"
+ title="珍珠奶茶"
+ price="8.00"
+ thumb="{{zhenzhunaichaURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		 id="zhenzhu"
+		/>
+	</view>
+</van-card>
+<van-submit-bar
+ price="{{sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+
+<van-toast id="van-toast" />
+

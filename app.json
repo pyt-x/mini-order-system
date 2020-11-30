@@ -4,7 +4,15 @@
     "pages/shopping-cart/shopping-cart",
     "pages/fenlei/fenlei",
     "pages/mine/mine",
+    "pages/index/zaodian",
+    "pages/index/zhushi",
+    "pages/index/yexiao",
+    "pages/fenlei/shucai",
+    "pages/fenlei/shaokao",
+    "pages/fenlei/tiandian",
+    "pages/fenlei/chayin",
     "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -14,6 +22,7 @@
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh":true
   },
+
   "tabBar": {
     "color": "green",
     "selectedColor": "red",
@@ -48,8 +57,14 @@
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "van-grid":"@vant/weapp/grid/index",
+    "van-stepper": "@vant/weapp/stepper/index",
     "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-search": "@vant/weapp/search/index",
     "van-image":"@vant/weapp/image/index",
-    "van-card": "@vant/weapp/card/index"
+    "van-card": "@vant/weapp/card/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-toast": "@vant/weapp/toast/index"
   }
 }

@@ -1,0 +1,55 @@
+<!--pages/index/zaodian.wxml-->
+<van-card
+ desc="描述信息"
+ title="面包"
+ price="3.50"
+ thumb="{{mianbaoURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-card
+ desc="描述信息"
+ title="豆浆"
+ price="1.50"
+ thumb="{{doujiangURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-card
+ desc="描述信息"
+ title="白粥"
+ price="2.00"
+ thumb="{{baizhouURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+

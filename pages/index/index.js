@@ -4,6 +4,9 @@ const app = getApp()
 
 Page({
   data: {
+    zhushiURL:"../../../../images/zhushi.jpg",
+    zaodianURL:"../../../../images/zaodian.jpg",
+    yexiaoURL:"../../../../images/yexiao.jpg",
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,

@@ -1,0 +1,38 @@
+<!--pages/fenlei/shucai.wxml-->
+<van-card
+ desc="描述信息"
+ title="青菜"
+ price="10.50"
+ thumb="{{qingcaiURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+<van-card
+ desc="描述信息"
+ title="西瓜/人份"
+ price="5.00"
+ thumb="{{xiguaURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		/>
+	</view>
+</van-card>
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+

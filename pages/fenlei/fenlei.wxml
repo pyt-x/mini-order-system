@@ -1,8 +1,35 @@
 <!--pages/fenlei/fenlei.wxml-->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+
 <van-grid icon-size="40px" clickable="true">
-	<van-grid-item icon="https://img.yzcdn.cn/vant/cat.jpeg" text="文字" />
-	<van-grid-item icon="../../../../images/shaokao.jpg" text="文字" />
-	<van-grid-item icon="photo-o" text="文字" />
-	<van-grid-item icon="photo-o" text="文字" />
+	<van-grid-item
+	 icon="../../../../images/shucai.jpg"
+	 text="蔬果"
+	 url="./shucai"
+	/>
+	<van-grid-item
+	 icon="../../../../images/shaokao.jpg"
+	 text="烧烤"
+	 url="./shaokao"
+	/>
+	<van-grid-item
+	 icon="../../../../images/tiandain.jpg"
+	 text="甜品"
+	 url="./tiandian"
+	/>
+	<van-grid-item
+	 icon="../../../../images/naicha.jpg"
+	 text="茶饮"
+	 url="./chayin"
+	/>
 </van-grid>
+
+<view class="dirver"></view>
+
+<van-image
+ width="100%"
+ height="10rem"
+ fit="contain"
+ src="../../../../images/huodong.jpg"
+/>
 

@@ -1,0 +1,41 @@
+<!--pages/index/yexiao.wxml-->
+<van-card
+ desc="描述信息"
+ title="炒粉"
+ price="10.50"
+ thumb="{{chaofenURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		 id="chaofen"
+		/>
+	</view>
+</van-card>
+
+<van-card
+ desc="描述信息"
+ title="炒田螺"
+ price="11.00"
+ thumb="{{chaotianluoURL}}"
+ lazy-load
+>
+	<view slot="footer">
+		<van-stepper
+		 value="{{0}}"
+		 bind:change="onChange"
+		 min="0"
+		 id="chaotianluo"
+		/>
+	</view>
+</van-card>
+
+<van-submit-bar
+ price="{{ sum_price }}"
+ button-text="提交订单"
+ bind:submit="onSubmit"
+/>
+
